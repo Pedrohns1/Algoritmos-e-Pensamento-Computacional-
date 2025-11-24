@@ -1,0 +1,172 @@
+//Exemplo de condicional simples
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Digite um nº: ");
+    scanf("%i", &num);
+    if (num > 21){
+        printf("O número %i é maior que 21.",num);
+    }
+    if (num < 21){
+        printf("O número %i é menor que 21.",num);
+    }
+    if (num == 21){
+        printf("O número %i e 21 são iguais",num);
+    }
+
+    return 0;
+}
+
+
+
+//Exemplo de condicional composta
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Digite um nº: ");
+    scanf("%i", &num);
+    if (num > 21){
+        printf("O número %i é maior que 21.",num);
+    }
+    else{
+    printf("O número %i é menor que 21.",num);
+    }
+    return 0;
+}
+
+
+
+//Exemplo de condicional aninhada
+#include <stdio.h>
+int main()
+{
+    int num;
+    printf("Digite um nº: ");
+    scanf("%i", &num);
+    if (num > 21){
+        printf("O número %i é maior que 21.",num);
+    }
+    else{
+        if(num == 21){
+            printf("O número %i e 21 são iguais",num);
+        }
+        else{
+    printf("O número %i é menor que 21.",num);
+        }
+    }
+    return 0;
+}
+
+
+
+//Exemplo Switch
+#include <stdio.h>
+int main()
+{
+    char cod;
+    printf("Escolha entre A - B - C: ");
+    scanf("%c", &cod);
+    switch (cod){
+        case 'A':
+        case 'a':
+        printf("Amor.");
+        break;
+        case 'B':
+        case 'b':
+        printf("Beijo.");
+        break;
+        case 'C':
+        case 'c':
+        printf("Carinho.");
+        break;
+    default:
+    printf("Valor inválido.");
+    }
+    return 0;
+}
+
+
+
+Atividades
+
+Vogal / Consoante
+#include <stdio.h>
+int main() {
+  char letra;
+  printf("Digite uma letra: ");
+  scanf(" %c", &letra);
+  switch(letra) {
+    case 'A':
+    case 'a':
+    case 'E':
+    case 'e':
+    case 'I':
+    case 'i':
+    case 'O':
+    case 'o':
+    case 'U':
+    case 'u':
+      printf("A letra %c é uma vogal.\n", letra);
+      break;
+    default:
+        printf("A letra %c é uma consoante.\n", letra);
+      break;
+  }
+  return 0;
+}
+
+Classificação idade
+
+#include <stdio.h>
+int main()
+{
+  int num;
+  printf("Digite um sua idade: ");
+  scanf("%i", &num);
+  if (num <= 12){
+    printf("Você é uma criança.");
+  }
+  else{
+    if(num >= 13 && num <= 19){
+      printf("Você é um adolescente.");
+    }
+  else{
+    if(num > 19)
+      printf("Você é um adulto.");
+    }
+  }
+  return 0;
+}
+
+Turno
+
+#include <stdio.h>
+int main()
+{
+  char turno;
+  printf("Digite a letra que corresponda seu turno\n");
+  printf("\nM - Matutino\n");
+  printf("V - Vespertino\n");
+  printf("N - Noturno\n");
+  printf("\nTurno:");
+  scanf("%c", &turno);
+  switch (turno){
+    case 'M':
+    case 'm':
+    printf("Bom dia!");
+    break;
+    case 'V':
+    case 'v':
+    printf("Boa tarde!");
+    break;
+    case 'N':
+    case 'n':
+    printf("Boa noite!");
+    break;
+  default:
+  printf("Turno inválido.");
+  }
+  return 0;
+}
