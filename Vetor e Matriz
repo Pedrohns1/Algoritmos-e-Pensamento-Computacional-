@@ -1,0 +1,43 @@
+//Exemplo de vetor
+#include <stdio.h>
+
+int main()
+{
+    int num[10];//declaração de variável composta
+    int i;
+    for(i=0; i<10; i++){//coleta de dados
+        printf("Digite um nº: ");
+        scanf("%i", &num[i]);
+    }
+    printf("*** Lista ***\n");//mensagem orientadora
+    for(i=0; i<10; i++){//imprime os dados
+        printf("%i \n", num[i]);
+    }
+
+    return 0;
+}
+
+
+
+//Exemplo de matriz
+#include <stdio.h>
+
+int main()
+{
+    int num[2] [2];
+    //coleta de dados
+    for (i=0; i<2; i++){//controla as linhas
+           for (j=0; j<2; j++){//controla colunas
+                  printf ("Digite um nº: ");
+                  scanf("%i", &num[i] [j]);
+            }
+     }       //impressão dos dados
+     printf ("Matriz Montada \n");
+     for (i=0; i<2; i++){//controla as linhas
+           for (j=0; j<2; j++){//controla colunas
+                 printf ("%i       ", num[i] [j]);
+           }
+           printf ("\n");
+     }
+    return 0;
+}
